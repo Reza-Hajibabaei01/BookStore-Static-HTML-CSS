@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/flexboxgrid.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://kit.fontawesome.com/c12335756e.js" crossorigin="anonymous"></script>
+        <title>Shoping</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-right">
+                    <a href="panel.html"><i class="fa-regular fa-user"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-house"></i></a>
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <div class="nav-left">
+                    <div class="register-login-btn">
+                        <i class="fa-solid fa-user"></i>
+                        <a href="login.html">ثبت نام / ورود</a>
+                    </div>
+                </div>
+            </nav>
+            <section class="slider">
+                <div class="slides">
+                    <!-- The first slider -->
+                    <div class="item active" id="slide1">
+                        <img src="images/slide1.jpg" alt="">
+                        <span>کتاب راستگوترین، بی‌توقع‌ترین، مفیدترین و همیشگی‌ترین رفیق برای هر انسان است<br>
+                            (مارک تواین)</span>
+                    </div>
+                    <!-- The second slider -->
+                    <div class="item" id="slide2">
+                        <img src="images/slide2.jpg" alt="">
+                        <span>کتاب‌ها مانند زنبورهایی هستند که گرده‌ی گل‌ها را از ذهنی به ذهن دیگر منتقل می‌کنن.<br>(جیمز راسل)</span>
+                    </div>
+                    <!-- The third slider -->
+                    <div class="item" id="slide3">
+                        <img src="images/slide3.jpg" alt="">
+                        <span>ما میخوانیم تا ذهن را آموزش دهیم؛ ذهن را پر کنیم؛ به ذهن استراحت دهیم، ذهن را ترمیم کنیم حتی ذهن را رها کنیم
+                            (هولبروک جکسون)<br></span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <i onclick="setSlide('slide1' , 1)" class="fas fa-circle"></i>
+                    <i onclick="setSlide('slide2' , 2)" class="fas fa-circle"></i>
+                    <i onclick="setSlide('slide3' , 3)" class="fas fa-circle"></i>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="product-sec-new">
+                <div class="row">
+                    <!-- item 1 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/item1.png" alt="">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب راز داوینچی
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">180 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/item2.png" alt="">
+                                <span class="hot-offer">پیشنهاد ویژه</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب هری پاتر و سنگ جادو
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">200 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/item3.png" alt="">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب دن کیشوت
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">150 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/item4.png" alt="">
+                                <span class="hot-offer">پیشنهاد ویژه</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب هری پاتر و یادگاران مرگ
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">250 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="supper-offer-section">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="supper-offer-box">
+                            <span class="supper-offer-box-title">
+                                پیشنهاد شگفت انگیز
+                            </span>
+                            <span class="body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="image-container">
+                                            <img src="images/pack.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="spesification">
+                                            <div class="price-row">
+                                                <div class="price">2 میلیون تومان</div>
+                                                <div class="off"> 60 % تخفیف</div>
+                                            </div>
+                                            <div class="title">مجموعه کتاب های هری پاتر</div>
+                                            <div class="counter-down">
+                                                <span id="seconds">40</span> :
+                                                <span id="mainutes">26</span> :
+                                                <span id="hours">19</span>
+                                            </div>
+                                            <div class="remaining-time">زمان باقی مانده تا پایان سفارش</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="banner">
+                            <img src="images/banner.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="dragble-list">
+                <div class="title">
+                    <span>کتاب ها</span>
+                </div>
+                <div id="owl-product" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/10.png" alt="">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب ذهنیت برنده
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">130 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/11.png" alt="">
+                                <span class="hot-offer">پیشنهاد ویژه</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب میشل استروگف
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">150 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/12.png" alt="">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب داستان دوشهر
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">230 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/13.png" alt="">
+                                <span class="hot-offer">پیشنهاد ویژه</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب چرا میخوابیم؟
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">90 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/14.png" alt="">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب چگونه کمال گرا نباشیم
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">120 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/15.png" alt="">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب دزیره
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">200 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/16.png" alt="">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب زن سی ساله
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">100 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/17.png" alt="">
+                                <span class="hot-offer">پیشنهاد ویژه</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب اوژنی گرانده
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">150 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shoping-card">
+                            <div class="img-sec">
+                                <img src="images/18.png" alt="">
+                                <span class="hot-offer">پیشنهاد ویژه</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                کتاب رابین هود
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">190 هزار تومان</span>
+                                </div>
+                                <div class="left">
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">علاقه</a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="extend-btn">
+                                        <a class="b-text" href="">خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="right">
+                        <div class="title">
+                            درباره ما
+                        </div>
+                        <div class="des">
+                            یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی شاپینگ سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.
+یکی از مهم‌ترین دغدغه‌های کاربران شاپینگ یا هر فروشگاه‌ اینترنتی دیگری، این است که کالای خریداری شده چه زمانی به دستشان می‌رسد. شاپینگ شیوه‌های مختلفی از ارسال را متناسب با فروشنده کالا،‌ مقصد کالا و همچنین نوع کالا در اختیار کاربران خود قرار می‌دهد. 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="left">
+                        <div class="title">
+                            مارا در شبکه های اجتماعی دنبال کنید :
+                        </div>
+                        <div class="socials">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                            <a href=""><i class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                کلیه حقوق محفوظ می باشد 2023 ©
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+        <script 
+            src="https://code.jquery.com/jquery-3.7.1.min.js" 
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+    </body>
+</html>
